@@ -1,4 +1,4 @@
-#include "../config.h"
+#include "../_config/_config.h"
 #if COMPONENT_CIPHER_SBOX
 #include "sbox.h"
 
