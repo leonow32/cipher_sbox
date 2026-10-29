@@ -42,7 +42,7 @@
         0x1E, 0x36, 0x68, 0x7F, 0x87, 0xF1, 0x6C, 0x49, 0xB9, 0xE8, 0xA0, 0x83, 0xAD, 0x4E, 0xD3, 0xF7, // F0
     };                                                                                           
 
-	#define SBOX_USE_DEMO_COMMANDS 		1
+	#define SBOX_USE_DEMO_COMMANDS 		true
 	#define SBOX_CONFIG_DONE
 #endif
 
