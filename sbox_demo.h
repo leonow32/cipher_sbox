@@ -1,7 +1,7 @@
 #ifndef SBOX_COMMANDS_H_
 #define SBOX_COMMANDS_H_
 
-#include "../uCosmos/console.h"
+#include "../uCosmos/uCosmos.h"
 #include "sbox.h"
 
 namespace sbox {
