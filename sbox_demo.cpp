@@ -23,15 +23,11 @@ void encrypt_cmd(int argc, char * argv[]) {
 
 	ExecutionTimer timer = ExecutionTimer();
 	encrypt(ciphertext, plaintext, length);
-	timer.print();
+	timer.end();
 	
 	printf("ciphertext[%u]: ", length);
-
-	for(uint8_t i=0; i<length; i++) {
-		printf("%02X", ciphertext[i]);
-	}
-
-	printf("\n");
+	print_hexstr(ciphertext, length, true);
+	timer.print();
 }
 
 void decrypt_cmd(int argc, char * argv[]) {
@@ -42,15 +38,11 @@ void decrypt_cmd(int argc, char * argv[]) {
 
 	ExecutionTimer timer = ExecutionTimer();
 	decrypt(plaintext, ciphertext, length);
-	timer.print();
+	timer.end();
 
 	printf("plaintext[%u]: ", length);
-
-	for(uint8_t i=0; i<length; i++) {
-		printf("%02X", plaintext[i]);
-	}
-
-	printf("\n");
+	print_hexstr(plaintext, length, true);
+	timer.print();
 }
 
 }
